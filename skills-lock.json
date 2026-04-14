@@ -6,6 +6,11 @@
       "sourceType": "github",
       "computedHash": "587f7d9187c237d909b9f446cf3ac357184342d54ceb7c430dec56fdbac6816c"
     },
+    "mmx-cli": {
+      "source": "MiniMax-AI/cli",
+      "sourceType": "github",
+      "computedHash": "a46f12da00d148d136cdbb0d35089380996b66dcf55022a801b2e028ecf5bcad"
+    },
     "react-useeffect": {
       "source": "softaworks/agent-toolkit",
       "sourceType": "github",
