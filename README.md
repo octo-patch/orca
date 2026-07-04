@@ -95,7 +95,7 @@ Text generation evaluates understanding on *TemporalBench*, *MVBench*, *SWITCH*,
 
 <table align="center" width="100%">
   <tr>
-    <th align="center" nowrap>Model</th><th align="center">Size (B)</th><th align="center">MVBench ↑</th><th align="center">TemporalBench ↑</th><th align="center">3DSRBench ↑</th><th align="center">SWITCH ↑</th><th align="center">Avg. ↑</th>
+    <th align="center" nowrap>Model</th><th align="center">Size<br>(B)</th><th align="center">MVBench ↑</th><th align="center">TemporalBench ↑</th><th align="center">3DSRBench ↑</th><th align="center">SWITCH ↑</th><th align="center">Avg. ↑</th>
   </tr>
   <tr><td align="center" nowrap>Emu3</td><td align="center">8</td><td align="center">35.2</td><td align="center">9.5</td><td align="center">39.1</td><td align="center">38.0</td><td align="center">30.4</td></tr>
   <tr><td align="center" nowrap>Emu3.5</td><td align="center">34</td><td align="center">39.5</td><td align="center">9.5</td><td align="center">31.3</td><td align="center">38.9</td><td align="center">29.8</td></tr>
@@ -111,7 +111,7 @@ Image prediction evaluates future-state prediction on *PRICE-V0.1* real-world in
 
 <table align="center" width="100%">
   <tr>
-    <th align="center" nowrap>Model</th><th align="center">Size (B)</th><th align="center" nowrap>Gemini 3.1 Pro ↑</th><th align="center" nowrap>GPT 5.4 ↑</th><th align="center" nowrap>Doubao-Seed-2.0 ↑</th><th align="center" nowrap>Gemma 4-31B ↑</th><th align="center">Avg. ↑</th>
+    <th align="center" nowrap>Model</th><th align="center">Size<br>(B)</th><th align="center" nowrap>Gemini 3.1 Pro ↑</th><th align="center" nowrap>GPT 5.4 ↑</th><th align="center" nowrap>Doubao-Seed-2.0 ↑</th><th align="center" nowrap>Gemma 4-31B ↑</th><th align="center">Avg. ↑</th>
   </tr>
   <tr><td align="center" nowrap>OmniGen2</td><td align="center">3+4</td><td align="center">24.6</td><td align="center">46.8</td><td align="center">41.4</td><td align="center">45.5</td><td align="center">39.6±10.2</td></tr>
   <tr><td align="center" nowrap>FLUX.1-Kontext</td><td align="center">12</td><td align="center">21.6</td><td align="center">46.9</td><td align="center">42.7</td><td align="center">52.5</td><td align="center">40.9±13.5</td></tr>
