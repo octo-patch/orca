@@ -45,12 +45,11 @@ Rather than optimizing isolated **next-token**, **next-frame**, or **next-action
 
 ## 📆 Todo
 
-- [ ] Add technical report link.
-- [ ] Add Hugging Face model and collection links.
-- [ ] Add model checkpoints.
-- [ ] Add inference examples.
-- [ ] Add training and evaluation code.
-- [ ] Add citation metadata.
+- [x] Release the **Orca Technical Report**.
+- [ ] Release the **Orca-4B checkpoint** for world latent learning and downstream readouts.
+- [ ] Release the **Orca-0.8B checkpoint** for lightweight research and reproduction.
+- [ ] Release **inference code** for text, image, and action readouts.
+- [ ] Release **downstream fine-tuning code** for modality-specific readout adaptation.
 
 ## 🚀 Highlights
 
