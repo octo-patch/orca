@@ -87,15 +87,51 @@ For pre-training, Orca constructs a large-scale world-learning inventory from **
 
 ## 🔍 Evaluation
 
-Orca is evaluated through three representative downstream readouts:
+Orca is evaluated through three representative downstream readouts: **text generation**, **image prediction**, and **action generation**.
 
-- **Text generation**: understanding on *TemporalBench*, *MVBench*, *SWITCH*, and *3DSRBench*.
-- **Image prediction**: future-state prediction on *PRICE-V0.1* real-world interactions.
-- **Action generation**: five real-robot tasks under *environment* and *object OOD* settings.
+### Text Generation
+
+Text generation evaluates understanding on *TemporalBench*, *MVBench*, *SWITCH*, and *3DSRBench*.
+
+| Model | Size (B) | MVBench ↑ | TemporalBench ↑ | 3DSRBench ↑ | SWITCH ↑ | Avg. ↑ |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Emu3 | 8 | 35.2 | 9.5 | 39.1 | 38.0 | 30.4 |
+| Emu3.5 | 34 | 39.5 | 9.5 | 31.3 | 38.9 | 29.8 |
+| MiniCPM-V-4.6 | 2 | 41.4 | 21.2 | 47.7 | 41.2 | 37.9 |
+| Qwen3.5 | 4 | **67.1** | 25.2 | 48.1 | 42.8 | 46.7 |
+| **Orca** | 0.8 | 53.6 | 22.6 | 43.4 | 43.7 | 40.8 |
+| **Orca** | 4 | 65.3 | **34.2** | **52.1** | **55.6** | **51.8** |
+
+### Image Prediction
+
+Image prediction evaluates future-state prediction on *PRICE-V0.1* real-world interactions.
+
+| Model | Size (B) | Gemini 3.1 Pro ↑ | GPT 5.4 ↑ | Doubao-Seed-2.0 ↑ | Gemma 4-31B ↑ | Avg. ↑ |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| OmniGen2 | 3+4 | 24.6 | 46.8 | 41.4 | 45.5 | 39.6±10.2 |
+| FLUX.1-Kontext | 12 | 21.6 | 46.9 | 42.7 | 52.5 | 40.9±13.5 |
+| FLUX.2 [klein] | 4+4 | 29.7 | 64.6 | 60.0 | **70.2** | 56.1±18.1 |
+| **Orca** | 0.8+2 | 17.0 | 48.5 | 46.0 | 26.5 | 34.5±15.3 |
+| **Orca** | 4+2 | **44.0** | **67.9** | **61.0** | 66.3 | **59.8±10.9** |
+
+### Action Generation
+
+Action generation evaluates five real-robot manipulation tasks under *environment* and *object OOD* settings.
+
+| Model | Rule-based ↑ | M25 ↑ | M50 ↑ | SR ↑ | MaxP-F ↑ | FNS ↑ | RBS ↑ | SQS ↑ |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| V-JEPA 2.1 | 17.0 | 27 | 7 | 0 | 17.4 | 10.1 | 20.5 | 0.0 |
+| Qwen3.5 | 10.5 | 18 | 5 | 0 | 13.1 | 7.6 | 11.9 | 0.0 |
+| pi0.5 | 29.4 | 54 | **14** | 5 | 26.5 | **15.3** | 26.7 | **3.0** |
+| **Orca** | **32.4** | **55** | **14** | **6** | **27.9** | 15.1 | **30.3** | 2.9 |
+
+### Scaling Behavior
 
 <div align="center">
 <img src="./assets/orca-scaling-performance.png" width="850"/>
 </div>
+
+<p align="center"><b>Figure 4.</b> Downstream readout performance improves as Orca pre-training scales.</p>
 
 Experiments indicate that stronger world latents from pre-training lead to stronger downstream readouts. As pre-training scales up, Orca improves across text, image, and action readouts while keeping the backbone frozen during readout post-training.
 
