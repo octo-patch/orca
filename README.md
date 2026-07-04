@@ -69,8 +69,6 @@ Orca follows an **Encoder-Decoder** architecture. Given multimodal world signals
 
 <p align="center"><b>Figure 2.</b> Lightweight readouts adapt frozen world latents to language, vision, and action.</p>
 
-<br/>
-
 Orca models world-state transitions under both **implicit dynamics** and **explicit conditions**. Implicit dynamics capture latent or unobserved factors such as physical laws, object properties, scene dynamics, and environmental forces, while explicit conditions describe observed signals such as human instructions, event descriptions, task intentions, or causal premises.
 
 ## 📚 Data
