@@ -112,20 +112,15 @@ Model links will be added after release.
 
 Code, checkpoints, and inference examples will be released soon.
 
-```bash
-git clone git@github.com:orca-wm/Orca.git
-cd Orca
-```
-
 ## 📑 Citation
 
-If you find Orca useful for your research, please consider citing our technical report. Citation information will be updated after the report is released.
+If you find Orca useful for your research, please consider citing our technical report.
 
 ```bibtex
-@article{orca2026world,
+@article{orca2026,
   title={Orca: The World is in Your Mind},
-  author={Orca Team, Beijing Academy of Artificial Intelligence},
-  journal={Technical Report},
+  author={Yihao Wang and Yuheng Ji and Mingyu Cao and Yanqing Shen and Runze Xiao and Huaihai Lyu and Senwei Xie and Euan Liu and Klara Tian and Tianfeng Long and Yichi Zhang and Zhengliang Cai and Ruike Chen and Jifan Zhao and Ruochuan Shi and Zihan Tang and Jing Lyu and Wenxing Tan and Ningbo Zhang and Yangtao Hu and Yuming Gao and Xiansheng Chen and Junkai Zhao and Congsheng Xu and Boan Zhu and Ziqi Wang and Yupu Feng and Qiongqiong Zhang and Yingli Zhao and Yulong Ao and Shaoxuan Xie and You Liu and Guocai Yao and Leiduo Zhang and Xiaodan Liu and Yunyan Zhang and Yance Jiao and Xinyan Yang and Jiaxing Wei and Xu Liu and Tengfei Pan and Shaokai Nie and Chunlei Men and Sen Cui and Xiaojie Jin and Hongyang Li and Jianlan Luo and Yao Mu and Yunchao Wei and Jun Yan and Hang Zhao and Xiaolong Zheng and Jiaming Li and Yonghua Lin and Tiejun Huang and Zhongyuan Wang and Pengwei Wang},
+  journal={arXiv preprint arXiv:2606.30534},
   year={2026}
 }
 ```
