@@ -125,6 +125,8 @@ Action generation evaluates five real-robot manipulation tasks under *environmen
 | pi0.5 | 29.4 | 54 | **14** | 5 | 26.5 | **15.3** | 26.7 | **3.0** |
 | **Orca** | **32.4** | **55** | **14** | **6** | **27.9** | 15.1 | **30.3** | 2.9 |
 
+<sub>M25/M50: trajectories reaching 25%/50% milestones; SR: success rate; MaxP-F: max process in failed trials; FNS: failure near-success score; RBS: robustness score; SQS: success quality score.</sub>
+
 ### Scaling Behavior
 
 <div align="center">
