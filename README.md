@@ -57,17 +57,17 @@ Orca follows an **Encoder-Decoder** architecture. Given multimodal world signals
 
 <div align="center">
 <img src="./assets/teaser.png" width="850"/>
-<br/>
-<sub><b>Figure 1.</b> Orca learns a unified world latent through unconscious and conscious learning.</sub>
 </div>
+
+<p align="center"><b>Figure 1.</b> Orca learns a unified world latent through unconscious and conscious learning.</p>
 
 <br/>
 
 <div align="center">
 <img src="./assets/readout.png" width="850"/>
-<br/>
-<sub><b>Figure 2.</b> Lightweight readouts adapt frozen world latents to language, vision, and action.</sub>
 </div>
+
+<p align="center"><b>Figure 2.</b> Lightweight readouts adapt frozen world latents to language, vision, and action.</p>
 
 <br/>
 
@@ -83,9 +83,9 @@ For pre-training, Orca constructs a large-scale world-learning inventory from **
 
 <div align="center">
 <img src="./assets/datapipeline.png" width="850"/>
-<br/>
-<sub><b>Figure 3.</b> Orca data pipeline from multimodal world signals to world latent learning.</sub>
 </div>
+
+<p align="center"><b>Figure 3.</b> Orca data pipeline from multimodal world signals to world latent learning.</p>
 
 ## 🔍 Evaluation
 
