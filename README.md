@@ -1,29 +1,31 @@
 <div align="center">
-<img src="./assets/orca-logo.png" width="720"/>
+<img src="./assets/orca-logo.png" width="300"/>
 </div>
 
-<h1 align="center">Orca: The World is in Your Mind</h1>
+<h2 align="center">Orca: The World is in Your Mind</h2>
 
 <p align="center">
   <b>Orca Team, Beijing Academy of Artificial Intelligence</b>
 </p>
 
 <p align="center">
-  <a href="https://orca-wm.github.io">Project Page</a>
+  ⭐️ <a href="https://orca-wm.github.io">Project Page</a>
   &nbsp;|&nbsp;
-  <a href="#">Technical Report</a>
+  🤗 <a href="https://huggingface.co/papers/2606.30534">Hugging Face</a>
   &nbsp;|&nbsp;
-  <a href="#">Hugging Face</a>
-  &nbsp;|&nbsp;
-  <a href="#">Models</a>
+  📑 <a href="https://arxiv.org/abs/2606.30534">Technical Report</a>
 </p>
 
 <p align="center">
   <b>A general world foundation model centered on Next-State-Prediction.</b>
 </p>
 
+<p align="center">
+  💬 <b>If you have any questions, feel free to contact us via WeChat.</b>
+</p>
+
 <div align="center">
-<img src="./assets/orca-framework.png" width="850"/>
+<img src="./assets/wechat.jpg" width="620"/>
 </div>
 
 ## Overview
