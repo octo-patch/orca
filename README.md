@@ -56,21 +56,36 @@ Rather than optimizing isolated **next-token**, **next-frame**, or **next-action
 Orca follows an **Encoder-Decoder** architecture. Given multimodal world signals, the **Encoder** learns a world latent through unconscious and conscious learning. After pre-training, the Encoder is frozen, and only lightweight modality-specific decoders are trained to read out the latent into downstream modalities.
 
 <div align="center">
-<img src="./assets/orca-encoder.png" width="850"/>
+<img src="./assets/teaser.png" width="850"/>
+<br/>
+<sub><b>Figure 1.</b> Orca learns a unified world latent through unconscious and conscious learning.</sub>
 </div>
 
-The state transition process can be understood as modeling how a latent world state evolves forward or backward under:
+<br/>
 
-- **Implicit dynamics**, such as physical laws, object properties, scene dynamics, and environmental forces.
-- **Explicit conditions**, such as human instructions, event descriptions, task intentions, or causal premises.
+<div align="center">
+<img src="./assets/readout.png" width="850"/>
+<br/>
+<sub><b>Figure 2.</b> Lightweight readouts adapt frozen world latents to language, vision, and action.</sub>
+</div>
+
+<br/>
+
+Orca models world-state transitions under both **implicit dynamics** and **explicit conditions**. Implicit dynamics capture latent or unobserved factors such as physical laws, object properties, scene dynamics, and environmental forces, while explicit conditions describe observed signals such as human instructions, event descriptions, task intentions, or causal premises.
 
 ## 📚 Data
 
-For pre-training, Orca constructs a large-scale world-learning inventory with:
+For pre-training, Orca constructs a large-scale world-learning inventory from **visual signals** and **language signals**. The data mixture includes video data for observation-only state transitions, event data for event-conditioned state transitions, and VQA data for response generation.
 
-- **125K hours** of video data.
-- **160M** event annotations.
-- Coverage over ego-centric interaction, exo-centric manipulation, action-free robot execution, and event-level transitions.
+- **125K hours** of video data covering egocentric interaction, exocentric manipulation, robot execution, and natural dynamics.
+- **160M** event annotations with fine- and coarse-grained captions for event-level transition learning.
+- **General VQA data** for aligning world latents with language understanding and response generation.
+
+<div align="center">
+<img src="./assets/datapipeline.png" width="850"/>
+<br/>
+<sub><b>Figure 3.</b> Orca data pipeline from multimodal world signals to world latent learning.</sub>
+</div>
 
 ## 🔍 Evaluation
 
