@@ -93,37 +93,46 @@ Orca is evaluated through three representative downstream readouts: **text gener
 
 Text generation evaluates understanding on *TemporalBench*, *MVBench*, *SWITCH*, and *3DSRBench*.
 
-| Model | Size (B) | MVBench ↑ | TemporalBench ↑ | 3DSRBench ↑ | SWITCH ↑ | Avg. ↑ |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Emu3 | 8 | 35.2 | 9.5 | 39.1 | 38.0 | 30.4 |
-| Emu3.5 | 34 | 39.5 | 9.5 | 31.3 | 38.9 | 29.8 |
-| MiniCPM-V-4.6 | 2 | 41.4 | 21.2 | 47.7 | 41.2 | 37.9 |
-| Qwen3.5 | 4 | **67.1** | 25.2 | 48.1 | 42.8 | 46.7 |
-| **Orca** | 0.8 | 53.6 | 22.6 | 43.4 | 43.7 | 40.8 |
-| **Orca** | 4 | 65.3 | **34.2** | **52.1** | **55.6** | **51.8** |
+<table align="center">
+  <tr>
+    <th>Model</th><th>Size (B)</th><th>MVBench ↑</th><th>TemporalBench ↑</th><th>3DSRBench ↑</th><th>SWITCH ↑</th><th>Avg. ↑</th>
+  </tr>
+  <tr><td>Emu3</td><td align="right">8</td><td align="right">35.2</td><td align="right">9.5</td><td align="right">39.1</td><td align="right">38.0</td><td align="right">30.4</td></tr>
+  <tr><td>Emu3.5</td><td align="right">34</td><td align="right">39.5</td><td align="right">9.5</td><td align="right">31.3</td><td align="right">38.9</td><td align="right">29.8</td></tr>
+  <tr><td>MiniCPM-V-4.6</td><td align="right">2</td><td align="right">41.4</td><td align="right">21.2</td><td align="right">47.7</td><td align="right">41.2</td><td align="right">37.9</td></tr>
+  <tr><td>Qwen3.5</td><td align="right">4</td><td align="right"><b>67.1</b></td><td align="right">25.2</td><td align="right">48.1</td><td align="right">42.8</td><td align="right">46.7</td></tr>
+  <tr><td><b>Orca</b></td><td align="right">0.8</td><td align="right">53.6</td><td align="right">22.6</td><td align="right">43.4</td><td align="right">43.7</td><td align="right">40.8</td></tr>
+  <tr><td><b>Orca</b></td><td align="right">4</td><td align="right">65.3</td><td align="right"><b>34.2</b></td><td align="right"><b>52.1</b></td><td align="right"><b>55.6</b></td><td align="right"><b>51.8</b></td></tr>
+</table>
 
 ### Image Prediction
 
 Image prediction evaluates future-state prediction on *PRICE-V0.1* real-world interactions.
 
-| Model | Size (B) | Gemini 3.1 Pro ↑ | GPT 5.4 ↑ | Doubao-Seed-2.0 ↑ | Gemma 4-31B ↑ | Avg. ↑ |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| OmniGen2 | 3+4 | 24.6 | 46.8 | 41.4 | 45.5 | 39.6±10.2 |
-| FLUX.1-Kontext | 12 | 21.6 | 46.9 | 42.7 | 52.5 | 40.9±13.5 |
-| FLUX.2 [klein] | 4+4 | 29.7 | 64.6 | 60.0 | **70.2** | 56.1±18.1 |
-| **Orca** | 0.8+2 | 17.0 | 48.5 | 46.0 | 26.5 | 34.5±15.3 |
-| **Orca** | 4+2 | **44.0** | **67.9** | **61.0** | 66.3 | **59.8±10.9** |
+<table align="center">
+  <tr>
+    <th>Model</th><th>Size (B)</th><th>Gemini<br/>3.1 Pro ↑</th><th>GPT<br/>5.4 ↑</th><th>Doubao-Seed<br/>2.0 ↑</th><th>Gemma<br/>4-31B ↑</th><th>Avg. ↑</th>
+  </tr>
+  <tr><td>OmniGen2</td><td align="right">3+4</td><td align="right">24.6</td><td align="right">46.8</td><td align="right">41.4</td><td align="right">45.5</td><td align="right">39.6±10.2</td></tr>
+  <tr><td>FLUX.1-Kontext</td><td align="right">12</td><td align="right">21.6</td><td align="right">46.9</td><td align="right">42.7</td><td align="right">52.5</td><td align="right">40.9±13.5</td></tr>
+  <tr><td>FLUX.2 [klein]</td><td align="right">4+4</td><td align="right">29.7</td><td align="right">64.6</td><td align="right">60.0</td><td align="right"><b>70.2</b></td><td align="right">56.1±18.1</td></tr>
+  <tr><td><b>Orca</b></td><td align="right">0.8+2</td><td align="right">17.0</td><td align="right">48.5</td><td align="right">46.0</td><td align="right">26.5</td><td align="right">34.5±15.3</td></tr>
+  <tr><td><b>Orca</b></td><td align="right">4+2</td><td align="right"><b>44.0</b></td><td align="right"><b>67.9</b></td><td align="right"><b>61.0</b></td><td align="right">66.3</td><td align="right"><b>59.8±10.9</b></td></tr>
+</table>
 
 ### Action Generation
 
 Action generation evaluates five real-robot manipulation tasks under *environment* and *object OOD* settings.
 
-| Model | Rule-based ↑ | M25 ↑ | M50 ↑ | SR ↑ | MaxP-F ↑ | FNS ↑ | RBS ↑ | SQS ↑ |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| V-JEPA 2.1 | 17.0 | 27 | 7 | 0 | 17.4 | 10.1 | 20.5 | 0.0 |
-| Qwen3.5 | 10.5 | 18 | 5 | 0 | 13.1 | 7.6 | 11.9 | 0.0 |
-| pi0.5 | 29.4 | 54 | **14** | 5 | 26.5 | **15.3** | 26.7 | **3.0** |
-| **Orca** | **32.4** | **55** | **14** | **6** | **27.9** | 15.1 | **30.3** | 2.9 |
+<table align="center">
+  <tr>
+    <th>Model</th><th>Rule ↑</th><th>M25 ↑</th><th>M50 ↑</th><th>SR ↑</th><th>MaxP-F ↑</th><th>FNS ↑</th><th>RBS ↑</th><th>SQS ↑</th>
+  </tr>
+  <tr><td>V-JEPA 2.1</td><td align="right">17.0</td><td align="right">27</td><td align="right">7</td><td align="right">0</td><td align="right">17.4</td><td align="right">10.1</td><td align="right">20.5</td><td align="right">0.0</td></tr>
+  <tr><td>Qwen3.5</td><td align="right">10.5</td><td align="right">18</td><td align="right">5</td><td align="right">0</td><td align="right">13.1</td><td align="right">7.6</td><td align="right">11.9</td><td align="right">0.0</td></tr>
+  <tr><td>pi0.5</td><td align="right">29.4</td><td align="right">54</td><td align="right"><b>14</b></td><td align="right">5</td><td align="right">26.5</td><td align="right"><b>15.3</b></td><td align="right">26.7</td><td align="right"><b>3.0</b></td></tr>
+  <tr><td><b>Orca</b></td><td align="right"><b>32.4</b></td><td align="right"><b>55</b></td><td align="right"><b>14</b></td><td align="right"><b>6</b></td><td align="right"><b>27.9</b></td><td align="right">15.1</td><td align="right"><b>30.3</b></td><td align="right">2.9</td></tr>
+</table>
 
 <sub>M25/M50: trajectories reaching 25%/50% milestones; SR: success rate; MaxP-F: max process in failed trials; FNS: failure near-success score; RBS: robustness score; SQS: success quality score.</sub>
 
