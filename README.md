@@ -41,8 +41,7 @@ Rather than optimizing isolated **next-token**, **next-frame**, or **next-action
 
 ## 🗞️ News
 
-- **2026-07-04**: Initial repository setup for Orca.
-- More checkpoints, reports, and project links will be added soon.
+- **`2026-06-29`**: 🎉 [**Orca Technical Report**](https://arxiv.org/abs/2606.30534) was released.
 
 ## 📆 Todo
 
