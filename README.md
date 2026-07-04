@@ -89,9 +89,9 @@ For pre-training, Orca constructs a large-scale world-learning inventory from **
 
 Orca is evaluated through three representative downstream readouts:
 
-- **Text generation** for out-of-distribution commonsense reasoning, comprehension, and high-level cognitive abilities.
-- **Image prediction** for visualizing state transitions in out-of-distribution scenarios.
-- **Action generation** for executing generated actions in real-world out-of-distribution settings.
+- **Text generation** on OOD understanding benchmarks, including TemporalBench, MVBench, SWITCH, and 3DSRBench.
+- **Image prediction** on PRICE-V0.1, evaluating future-state prediction in real-world interactions.
+- **Action generation** on five real-robot manipulation tasks, evaluated under environment and object OOD settings.
 
 <div align="center">
 <img src="./assets/orca-scaling-performance.png" width="850"/>
