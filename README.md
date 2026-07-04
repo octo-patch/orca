@@ -51,14 +51,6 @@ Rather than optimizing isolated **next-token**, **next-frame**, or **next-action
 - [ ] Release **inference code** for text, image, and action readouts.
 - [ ] Release **downstream fine-tuning code** for modality-specific readout adaptation.
 
-## 🚀 Highlights
-
-- **World latent space**: Orca organizes multimodal world signals into a shared predictive latent representation.
-- **Next-State-Prediction**: Orca models how world states transition under implicit dynamics and explicit conditions.
-- **Two learning paradigms**: unconscious learning for dense natural dynamics, and conscious learning for language-conditioned meaningful transitions.
-- **Multimodal readouts**: frozen Orca backbones can be read out into language, vision, and action through lightweight decoders.
-- **Scalable behavior**: training losses decrease with model size and data scale, and downstream readout performance improves as pre-training scales.
-
 ## ⭐️ Architecture
 
 Orca follows an **Encoder-Decoder** architecture. Given multimodal world signals, the **Encoder** learns a world latent through unconscious and conscious learning. After pre-training, the Encoder is frozen, and only lightweight modality-specific decoders are trained to read out the latent into downstream modalities.
