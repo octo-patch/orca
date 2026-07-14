@@ -42,6 +42,7 @@ Rather than optimizing isolated **next-token**, **next-frame**, or **next-action
 ## 🗞️ News
 
 - **`2026-06-29`**: 🎉 [**Orca Technical Report**](https://arxiv.org/abs/2606.30534) was released.
+- **`2026-07-14`**: 🚀 [**Orca-4B**](https://huggingface.co/BAAI/Orca-4B) checkpoint was released on Hugging Face.
 
 ## 📆 Todo
 
@@ -84,6 +85,15 @@ For pre-training, Orca constructs a large-scale world-learning inventory from **
 </div>
 
 <p align="center"><b>Figure 3.</b> Orca data pipeline from multimodal world signals to world latent learning.</p>
+
+## 🤗 Model Zoo
+
+Available checkpoints are listed below.
+
+| Model | Checkpoint | Description |
+| --- | --- | --- |
+| Orca-4B | [🤗 BAAI/Orca-4B](https://huggingface.co/BAAI/Orca-4B) | Larger Orca backbone with stronger downstream readout performance. |
+| Orca-0.8B | Coming soon | Lightweight Orca backbone for world latent learning. |
 
 ## 🔍 Evaluation
 
@@ -147,15 +157,6 @@ Action generation evaluates five real-robot manipulation tasks under *environmen
 <p align="center"><b>Figure 4.</b> Downstream readout performance improves as Orca pre-training scales.</p>
 
 Experiments indicate that stronger world latents from pre-training lead to stronger downstream readouts. As pre-training scales up, Orca improves across text, image, and action readouts while keeping the backbone frozen during readout post-training.
-
-## 🤗 Model Zoo
-
-Available checkpoints are listed below.
-
-| Model | Checkpoint | Description |
-| --- | --- | --- |
-| Orca-4B | [🤗 BAAI/Orca-4B](https://huggingface.co/BAAI/Orca-4B) | Larger Orca backbone with stronger downstream readout performance. |
-| Orca-0.8B | Coming soon | Lightweight Orca backbone for world latent learning. |
 
 ## 🛠️ Usage
 
