@@ -11,7 +11,7 @@
 <p align="center">
   ⭐️ <a href="https://orca-wm.github.io">Project Page</a>
   &nbsp;|&nbsp;
-  🤗 <a href="https://huggingface.co/papers/2606.30534">Hugging Face</a>
+  🤗 <a href="https://huggingface.co/BAAI/Orca-4B">Hugging Face</a>
   &nbsp;|&nbsp;
   📑 <a href="https://arxiv.org/abs/2606.30534">Technical Report</a>
 </p>
