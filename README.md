@@ -46,9 +46,9 @@ Rather than optimizing isolated **next-token**, **next-frame**, or **next-action
 ## 📆 Todo
 
 - [x] Release the **Orca Technical Report**.
-- [ ] Release the **Orca-4B checkpoint** for world latent learning and downstream readouts.
+- [x] Release the **Orca-4B checkpoint** for world latent learning and downstream readouts.
+- [x] Release **inference code** for text, image, and action readouts.
 - [ ] Release the **Orca-0.8B checkpoint** for lightweight research and reproduction.
-- [ ] Release **inference code** for text, image, and action readouts.
 - [ ] Release **downstream fine-tuning code** for modality-specific readout adaptation.
 
 ## ⭐️ Architecture
@@ -109,6 +109,8 @@ Text generation evaluates understanding on *TemporalBench*, *MVBench*, *SWITCH*,
 
 Image prediction evaluates future-state prediction on *PRICE-V0.1* real-world interactions.
 
+The PRICE evaluation toolkit is available in [`evaluation/image_gen/PRICE/`](./evaluation/image_gen/PRICE), and the benchmark data is hosted at [BAAI/PRICE](https://huggingface.co/datasets/BAAI/PRICE).
+
 <table align="center" width="100%">
   <tr>
     <th align="center" nowrap>Model</th><th align="center" nowrap>Size (B)</th><th align="center" nowrap>Gemini 3.1 Pro ↑</th><th align="center" nowrap>GPT 5.4 ↑</th><th align="center" nowrap>Doubao-Seed-2.0 ↑</th><th align="center" nowrap>Gemma 4-31B ↑</th><th align="center">Avg. ↑</th>
@@ -148,16 +150,40 @@ Experiments indicate that stronger world latents from pre-training lead to stron
 
 ## 🤗 Model Zoo
 
-Model links will be added after release.
+Available checkpoints are listed below.
 
 | Model | Checkpoint | Description |
 | --- | --- | --- |
+| Orca-4B | [🤗 BAAI/Orca-4B](https://huggingface.co/BAAI/Orca-4B) | Larger Orca backbone with stronger downstream readout performance. |
 | Orca-0.8B | Coming soon | Lightweight Orca backbone for world latent learning. |
-| Orca-4B | Coming soon | Larger Orca backbone with stronger downstream readout performance. |
 
 ## 🛠️ Usage
 
-Code, checkpoints, and inference examples will be released soon.
+The current release provides the [🤗 BAAI/Orca-4B](https://huggingface.co/BAAI/Orca-4B) checkpoint and evaluation code for image and text generation.
+
+Clone the repository and install the shared dataset downloader:
+
+```bash
+git clone https://github.com/orca-wm/Orca.git
+cd Orca/evaluation
+python -m pip install -r requirements-data.txt
+```
+
+Download evaluation datasets into `evaluation/data/`:
+
+```bash
+python download_datasets.py price
+python download_datasets.py switch
+python download_datasets.py mvbench
+python download_datasets.py temporalbench
+python download_datasets.py 3dsrbench
+```
+
+See the task-specific instructions for model setup and evaluation:
+
+- [PRICE image-generation evaluation](./evaluation/image_gen/PRICE)
+- [Text-generation evaluation](./evaluation/text_gen)
+- [Complete evaluation and dataset setup](./evaluation)
 
 ## 📑 Citation
 

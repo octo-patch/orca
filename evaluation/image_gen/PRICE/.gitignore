@@ -1,0 +1,11 @@
+env.toml
+outputs/
+data/
+__pycache__/
+*.py[cod]
+
+# Evaluation byproducts (e.g. from running the sample_outputs/ example)
+eval_results*.json
+eval_results_shard_*.json
+eval_shard_*.log
+scores_of_judges.md

@@ -1,0 +1,32 @@
+[project]
+name = "price-eval-gemma4-env"
+version = "0.1.0"
+description = "Isolated runtime environment for the local Gemma 4 judge used by PRICE evaluation."
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate",
+    "pillow",
+    "safetensors",
+    "torch==2.10.0+cu129",
+    "torchaudio==2.10.0+cu129",
+    "torchvision==0.25.0+cu129",
+    "transformers==5.5.0",
+    "tqdm",
+]
+
+# flash-attn is optional and not resolvable from a public package index: it must be
+# built (or downloaded as a prebuilt wheel) matching this exact torch/CUDA/Python
+# combo (cu129, torch 2.10, cp312, cxx11abiTRUE), then installed manually into this
+# venv, e.g.:
+#   uv pip install /path/to/flash_attn-<version>+cu12torch2.10cxx11abiTRUE-cp312-cp312-linux_x86_64.whl
+# The judge runs without it (falls back to eager/sdpa attention), just slower.
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cu129" }]
+torchaudio = [{ index = "pytorch-cu129" }]
+torchvision = [{ index = "pytorch-cu129" }]
+
+[[tool.uv.index]]
+name = "pytorch-cu129"
+url = "https://download.pytorch.org/whl/cu129"
+explicit = true

@@ -1,0 +1,7 @@
+accelerate==1.5.2
+qwen_vl_utils==0.0.14
+safetensors==0.8.0
+torch==2.6.0
+torchvision==0.21.0
+tqdm==4.67.1
+transformers==5.5.0

@@ -1,0 +1,10 @@
+accelerate==1.14.0
+common==0.1.2
+numpy==2.5.1
+pandas==3.0.3
+Pillow==12.3.0
+safetensors==0.8.0
+torch==2.11.0+cu129
+torchvision==0.26.0+cu129
+tqdm==4.68.2
+transformers==5.9.0

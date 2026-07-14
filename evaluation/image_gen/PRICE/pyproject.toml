@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "price-eval"
+version = "0.1.0"
+description = "Official evaluation toolkit for the PRICE benchmark."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "huggingface-hub>=0.25",
+    "openai",
+    "pillow",
+    "tqdm",
+    "tomli; python_version < '3.11'",
+]
+
+[tool.setuptools]
+py-modules = []
