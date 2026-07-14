@@ -41,8 +41,9 @@ Rather than optimizing isolated **next-token**, **next-frame**, or **next-action
 
 ## 🗞️ News
 
+- **`2026-07-14`**: 🚀 [**Orca-4B**](https://huggingface.co/BAAI/Orca-4B) checkpoint was released on HuggingFace.
 - **`2026-06-29`**: 🎉 [**Orca Technical Report**](https://arxiv.org/abs/2606.30534) was released.
-- **`2026-07-14`**: 🚀 [**Orca-4B**](https://huggingface.co/BAAI/Orca-4B) checkpoint was released on Hugging Face.
+
 
 ## 📆 Todo
 
