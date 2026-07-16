@@ -25,7 +25,7 @@
 </p>
 
 <div align="center">
-<img src="./assets/wechat.jpg" width="620"/>
+<img src="./assets/wechat.jpg" width="520"/>
 </div>
 
 ## 🔥 Overview
