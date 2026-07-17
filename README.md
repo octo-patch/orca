@@ -111,7 +111,7 @@ Text generation evaluates understanding on *TemporalBench*, *MVBench*, *SWITCH*,
   <tr><td align="center" nowrap>Emu3</td><td align="center">8</td><td align="center">35.2</td><td align="center">9.5</td><td align="center">39.1</td><td align="center">38.0</td><td align="center">30.4</td></tr>
   <tr><td align="center" nowrap>Emu3.5</td><td align="center">34</td><td align="center">39.5</td><td align="center">9.5</td><td align="center">31.3</td><td align="center">38.9</td><td align="center">29.8</td></tr>
   <tr><td align="center" nowrap>MiniCPM-V-4.6</td><td align="center">2</td><td align="center">41.4</td><td align="center">21.2</td><td align="center">47.7</td><td align="center">41.2</td><td align="center">37.9</td></tr>
-  <tr><td align="center" nowrap>Qwen3.5</td><td align="center">4</td><td align="center"><b>67.1</b></td><td align="center">25.2</td><td align="center">48.1</td><td align="center">42.8</td><td align="center">46.7</td></tr>
+  <tr><td align="center" nowrap>Qwen3.5</td><td align="center">4</td><td align="center"><b>67.1</b></td><td align="center">25.2</td><td align="center">48.1</td><td align="center">46.5</td><td align="center">46.7</td></tr>
   <tr><td align="center" nowrap><b>Orca</b></td><td align="center">0.8</td><td align="center">53.6</td><td align="center">22.6</td><td align="center">43.4</td><td align="center">43.7</td><td align="center">40.8</td></tr>
   <tr><td align="center" nowrap><b>Orca</b></td><td align="center">4</td><td align="center">65.3</td><td align="center"><b>34.2</b></td><td align="center"><b>52.1</b></td><td align="center"><b>55.6</b></td><td align="center"><b>51.8</b></td></tr>
 </table>
