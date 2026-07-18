@@ -49,7 +49,7 @@ Rather than optimizing isolated **next-token**, **next-frame**, or **next-action
 
 - [x] Release the **Orca Technical Report**.
 - [x] Release the **Orca-4B checkpoint** for world latent learning and downstream readouts.
-- [x] Release **inference code** for text, image, and action readouts.
+- [x] Release **inference code** for text, image.
 - [ ] Release the **Orca-0.8B checkpoint** for lightweight research and reproduction.
 - [ ] Release **downstream fine-tuning code** for modality-specific readout adaptation.
 
