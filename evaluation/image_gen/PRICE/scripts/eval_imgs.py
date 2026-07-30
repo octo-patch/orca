@@ -33,6 +33,8 @@ API_JUDGE_MODEL_ALIASES = {
     "gemini3.1": "gemini-3.1-pro-preview",
     "gpt5.4": "gpt-5.4-high",
     "doubao2.0": "doubao-seed-2-0-pro",
+    "minimax-m3": "MiniMax-M3",
+    "minimax-m2.7": "MiniMax-M2.7",
 }
 
 # Optional direct-to-provider routing (see docs/PUBLIC_OFFICIAL_API_JUDGES_PLAN_zh.md).
@@ -42,6 +44,8 @@ JUDGE_ALIAS_PROVIDER = {
     "gemini3.1": "gemini",
     "gpt5.4": "openai",
     "doubao2.0": "doubao",
+    "minimax-m3": "minimax",
+    "minimax-m2.7": "minimax",
 }
 
 # NOTE: these base URLs are the providers' publicly documented endpoints, but the
@@ -51,6 +55,9 @@ PROVIDER_DEFAULT_BASE_URL = {
     "openai": "https://api.openai.com/v1",
     "gemini": "https://generativelanguage.googleapis.com/v1beta/openai/",
     "doubao": "https://ark.cn-beijing.volces.com/api/v3",
+    # Global (international) OpenAI-compatible endpoint. For the mainland China
+    # site set base_url = "https://api.minimaxi.com/v1" under [minimax] in env.toml.
+    "minimax": "https://api.minimax.io/v1",
 }
 
 # NOTE: unverified best-effort defaults, reusing the aggregator's alias strings (a
@@ -60,6 +67,8 @@ JUDGE_ALIAS_OFFICIAL_MODEL_ID = {
     "gemini3.1": "gemini-3.1-pro-preview",
     "gpt5.4": "gpt-5.4-high",
     "doubao2.0": "doubao-seed-2-0-pro",
+    "minimax-m3": "MiniMax-M3",
+    "minimax-m2.7": "MiniMax-M2.7",
 }
 
 PROVIDER_MODE_CHOICES = ("auto", "official", "aihubmix")

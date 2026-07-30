@@ -118,6 +118,9 @@ api_key = "YOUR_GEMINI_API_KEY"
 
 [doubao]
 api_key = "YOUR_DOUBAO_API_KEY"
+
+[minimax]
+api_key = "YOUR_MINIMAX_API_KEY"
 ```
 
 The supported API judge aliases are:
@@ -127,6 +130,10 @@ The supported API judge aliases are:
 | `gemini3.1` | Gemini official API or AiHubMix fallback |
 | `gpt5.4` | OpenAI official API or AiHubMix fallback |
 | `doubao2.0` | Doubao official API or AiHubMix fallback |
+| `minimax-m3` | MiniMax official API or AiHubMix fallback |
+| `minimax-m2.7` | MiniMax official API or AiHubMix fallback |
+
+The MiniMax provider defaults to the global endpoint (`https://api.minimax.io/v1`). To use the mainland China site instead, set `base_url = "https://api.minimaxi.com/v1"` under `[minimax]` in `env.toml`.
 
 If an official provider key is unavailable, configure the optional fallback:
 
